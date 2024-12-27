@@ -22,7 +22,8 @@ export const contexto = createContext()
 
 const initialState = {
   token: '',
-  tareas: []
+  tasks: [],
+  edit: {}
 }
 
 const reducer = (state, action) => {
@@ -30,12 +31,22 @@ const reducer = (state, action) => {
     case 'TOKEN':
       return {
         ...state,
-        token: action.token
+        token: action.payload
       }
     case 'ADD':
       return {
         ...state,
-        tareas: [...state.tareas, action.tarea]
+        tasks: [...state.tasks, action.payload]
+      }
+    case 'TASK':
+      return {
+        ...state,
+        tasks: action.payload
+      }
+    case 'EDIT':
+      return {
+        ...state,
+        edit: action.payload
       }
   }
 }

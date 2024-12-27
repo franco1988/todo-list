@@ -1,4 +1,17 @@
+import { useContext } from "react"
+import { contexto } from "../layout"
+
 export default function Login() {
+     const {state, dispatch} = useContext(contexto)
+
+    const submit = () => {
+        console.log('** entro submit')
+        dispatch({
+            type: 'TOKEN',
+            payload: 'SIETR78VHTECN666EH09W8W55EHEY' 
+        })
+    }
+
     return (
         <>
             <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -57,6 +70,7 @@ export default function Login() {
                         <div>
                             <button
                                 type="submit"
+                                onClick={() => submit()}
                                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 Sign in
