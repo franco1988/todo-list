@@ -1,3 +1,4 @@
+'use client'
 import { contexto } from '@/app/layout'
 import React, { useContext } from 'react'
 import { useRouter } from 'next/navigation'
