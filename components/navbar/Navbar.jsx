@@ -8,7 +8,7 @@ export const Navbar = () => {
     const router = useRouter()
 
     useEffect(() => {
-        if( state.token === ''){
+        if( !state.token){
             router.push('/')
         }
     }, []);
@@ -31,7 +31,7 @@ export const Navbar = () => {
                 LISTA DE TAREAS
             </div>
             {
-                state.token != '' && 
+                state.token && 
                     <div>
                         <button 
                             type='button' 

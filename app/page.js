@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar/>
       <div className="items-center justify-center min-h-screen p-4 gap-16 bg-amber-300">
         {
-          state.token != ''?
+          state.token?
             <HomeTask/>
             : <Login/>
 

@@ -10,7 +10,7 @@ export default function AddTask() {
         const router = useRouter()
     
         useEffect(() => {
-            if( state.token === ''){
+            if( !state.token){
                 router.push('/')
             }
         }, []);

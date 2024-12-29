@@ -21,7 +21,7 @@ const metadata = {
 export const contexto = createContext()
 
 const initialState = {
-  token: '',
+  token: null,
   tasks: [],
   edit: {}
 }
