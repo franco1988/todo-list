@@ -20,7 +20,7 @@ export default function Login() {
                     <form className="space-y-6">
                         <div>
                             <label className="block text-sm/6 font-semibold text-gray-900">
-                                Email address
+                                Email
                             </label>
                             <div className="mt-2">
                                 <input
@@ -37,7 +37,7 @@ export default function Login() {
                         <div>
                             <div className="flex items-center justify-between">
                                 <label className="block text-sm/6 font-semibold text-gray-900">
-                                    Password
+                                    Contraseña
                                 </label>
                             </div>
                             <div className="mt-2">

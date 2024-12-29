@@ -65,7 +65,7 @@ export const Form = (props) => {
             isEdit?
                 <p className="text-4xl m-3 font-semibold tracking-tight text-amber-700">Editar Tarea</p>
                 :
-                <p className="text-4xl m-3 font-semibold tracking-tight text-amber-700">Crear Tarea</p>
+                <p className="text-4xl m-3 font-semibold tracking-tight text-amber-700">Agregar Tarea</p>
         }
       </div>
       <form className="mx-auto mt-2 max-w-xl">

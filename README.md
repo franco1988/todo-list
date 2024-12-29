@@ -1,8 +1,7 @@
 # LISTA DE TAREAS
 
 Esta pagina web es una sirve para tener mas organizada las tareas diarias de cada usuario.
-Para iniciar sesion se nescesita ingresar un email y una contraseña. Luego aparecen las tareas previamente guardadas,
-las cuales pueden ser borradas, editadas, tildarlas como hechas o destildarlas, tambien se pueden crear nuevas tareas.
+Para iniciar sesion se nescesita ingresar un email(cualquiera) y una contraseña(cualquiera). Luego aparecen las tareas previamente guardadas, las cuales pueden ser borradas, editadas, tildarlas como hechas o destildarlas, tambien se pueden crear nuevas tareas.
 
 ### INTRUCCIONES DE INSTALACION
 
