@@ -58,17 +58,17 @@ export const Form = (props) => {
   }
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="items-center justify-center min-h-screen p-4 gap-16 bg-amber-300">
       
-      <div className="mx-auto max-w-2xl text-center">
+      <div className="text-center">
         {
             isEdit?
-                <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Editar Tarea</h2>
+                <p className="text-4xl m-3 font-semibold tracking-tight text-amber-700">Editar Tarea</p>
                 :
-                <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Crear Tarea</h2>
+                <p className="text-4xl m-3 font-semibold tracking-tight text-amber-700">Crear Tarea</p>
         }
       </div>
-      <form className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form className="mx-auto mt-2 max-w-xl">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="sm:col-span-2">
             <label className="block text-sm/6 font-semibold text-gray-900">
@@ -102,13 +102,13 @@ export const Form = (props) => {
           </div>
           
         </div>
-        <div className="mt-10">
+        <div className="flex  justify-center mt-10">
             {
                 isEdit?
                     <button
                         type='button'
                         onClick={() => editTarea()}
-                        className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="flex  justify-center rounded-md bg-amber-700 mx-1 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-400 hover:text-amber-700 w-3/5"
                     >
                         Guardar Tarea
                     </button>
@@ -116,7 +116,7 @@ export const Form = (props) => {
                     <button
                         type='button'
                         onClick={() => crearTarea()}
-                        className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        className="flex  justify-center rounded-md bg-amber-700 mx-1 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-400 hover:text-amber-700 w-3/5"
                     >
                         Crear Tarea
                     </button>

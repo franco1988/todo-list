@@ -20,7 +20,7 @@ export const taskApi = [
         estado: false
     },
     {
-        titulo: 'Vetrinario',
+        titulo: 'Veterinario',
         descripcion: 'Colocar vacuna a Winnie',
         estado: true
     }

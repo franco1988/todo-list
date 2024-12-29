@@ -41,17 +41,28 @@ export const CardTask = (props) => {
 
   return (
     <>
-      <div style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'1rem 0rem'}}>
+      <div className='flex justify-between items-center'>
         <div>
           <input type="checkbox" checked={data.estado} onChange={checkbox}/>
         </div>
-        <div>
-          <h2>{data.titulo}</h2>
-          <p>{data.descripcion}</p>
+        <div className='flex flex-col content-start'>
+          <p className='font-semibold text-3xl'>{data.titulo}</p>
+          <p className='font-normal text-lg'>{data.descripcion}</p>
         </div>
-        <div>
-          <button type='button' onClick={() => deleteTask()}>Eliminar</button>
-          <button type='button' onClick={() => editTask()}>Editar</button>
+        <div className='flex justify-between items-center'>
+          <button 
+            type='button' 
+            onClick={() => deleteTask()}
+            className="flex  justify-center rounded-md bg-red-600 mx-1 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-red-200 hover:text-red-600"
+          >
+            Eliminar
+          </button>
+          <button 
+            type='button' 
+            onClick={() => editTask()}
+            className="flex  justify-center rounded-md bg-amber-700 mx-1 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-400 hover:text-amber-700"
+          >Editar
+          </button>
         </div>
       </div>
       <hr/>
