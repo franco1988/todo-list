@@ -35,7 +35,7 @@ export const CardTask = (props) => {
         type: 'EDIT',
         payload: edit
     })
-    router.push('/task/edittask')
+    router.push('/edittask')
   }
 
   return (
@@ -49,8 +49,8 @@ export const CardTask = (props) => {
           <p>{data.descripcion}</p>
         </div>
         <div>
-          <button onClick={() => deleteTask()}>Eliminar</button>
-          <button onClick={() => editTask()}>Editar</button>
+          <button type='button' onClick={() => deleteTask()}>Eliminar</button>
+          <button type='button' onClick={() => editTask()}>Editar</button>
         </div>
       </div>
       <hr/>

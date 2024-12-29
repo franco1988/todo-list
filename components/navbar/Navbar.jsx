@@ -7,7 +7,7 @@ export const Navbar = () => {
     const {state, dispatch} = useContext(contexto)
     const router = useRouter()
 
-     useEffect(() => {
+    useEffect(() => {
         if( state.token === ''){
             router.push('/')
         }
@@ -23,11 +23,11 @@ export const Navbar = () => {
 
   return (
     <>
-        <div>Tareas</div>
         <div>
+            Tareas
             {
                 state.token != '' && 
-                    <button onClick={() => CerrarSesion()}> Cerrar Sesion</button>
+                    <button type='button' onClick={() => CerrarSesion()}> Cerrar Sesion</button>
             }
         </div>
     </>
