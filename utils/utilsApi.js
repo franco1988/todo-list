@@ -1,7 +1,7 @@
 export const taskApi = [
     {
         titulo: 'Compras',
-        descripcion: 'Ir al supermecado para la compra del mes.',
+        descripcion: 'Ir al supermecado.',
         estado: false
     },
     {

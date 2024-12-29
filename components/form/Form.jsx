@@ -118,7 +118,7 @@ export const Form = (props) => {
                         onClick={() => crearTarea()}
                         className="flex  justify-center rounded-md bg-amber-700 mx-1 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-amber-400 hover:text-amber-700 w-3/5"
                     >
-                        Crear Tarea
+                        Agregar Tarea
                     </button>
             }
           
